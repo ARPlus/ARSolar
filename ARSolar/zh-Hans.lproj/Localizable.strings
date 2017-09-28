@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  ARSolar
+
+  Created by 文刀 on 2017/8/25.
+  Copyright © 2017年 wendao. All rights reserved.
+*/
+"RecordScreen" = "录屏分享";
+"StopRecord" = "停止录屏";
+"StopRecordTop" = "录制视频中... 点此停止";
+"FinishRecord" = "保存视频成功，可以在你的系统相册找到它，分享到微信or朋友圈哦～ \n如果找不到该视频，你可尝试使用系统自带的录屏功能：\n[设置-控制中心-录屏]";
+"IKnow" = "我知道了";
+"CaAuContent" = "请在iPhone 设置-隐私-相机 选项中，允许AR太阳系访问你的相机";
+"LogoImageName" = "logo";
+"DeAuContent" = "很抱歉,苹果的ARKit不支持你的手机型号(需要6s机型及以上),所以你无法使用相关本app相关功能:)";
+

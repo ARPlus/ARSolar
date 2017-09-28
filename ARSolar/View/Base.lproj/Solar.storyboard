@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Solar View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="SolarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BV1-FR-VrT" userLabel="Solar View Controller" customClass="SolarViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E3o-43-WKG"/>
+                        <viewControllerLayoutGuide type="bottom" id="BsP-LT-0SZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hG4-f3-ROa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWd-gK-lDR">
+                                <rect key="frame" x="163" y="244.5" width="50.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjI-29-B53">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8J-K7-OFh" userLabel="main button">
+                                <rect key="frame" x="163.5" y="607" width="48" height="48"/>
+                                <state key="normal" image="add"/>
+                                <state key="selected" image="set"/>
+                                <connections>
+                                    <action selector="choose:" destination="BV1-FR-VrT" eventType="touchUpInside" id="tQg-rA-pG8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klg-IR-iP9" userLabel="back button">
+                                <rect key="frame" x="12" y="611" width="62" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="EGS-XL-Buf"/>
+                                </constraints>
+                                <state key="normal" title="返回主页">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="BV1-FR-VrT" eventType="touchUpInside" id="WqI-aA-eIH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCd-q4-yXE" userLabel="record button">
+                                <rect key="frame" x="301" y="611" width="62" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="rhp-Im-vBG"/>
+                                </constraints>
+                                <state key="normal" title="录屏分享">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="record:" destination="BV1-FR-VrT" eventType="touchUpInside" id="fV6-ge-KRS"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0Sb-Ky-66q">
+                                <rect key="frame" x="144.5" y="579" width="85" height="16"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36063957214355469" green="0.36019390821456909" blue="0.39333304762840271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Klg-IR-iP9" firstAttribute="leading" secondItem="hG4-f3-ROa" secondAttribute="leading" constant="12" id="2O6-AV-yGd"/>
+                            <constraint firstItem="c8J-K7-OFh" firstAttribute="centerX" secondItem="hG4-f3-ROa" secondAttribute="centerX" id="5Xz-uE-zwK"/>
+                            <constraint firstItem="c8J-K7-OFh" firstAttribute="top" secondItem="0Sb-Ky-66q" secondAttribute="bottom" constant="12" id="8RM-2v-JST"/>
+                            <constraint firstItem="BsP-LT-0SZ" firstAttribute="top" secondItem="c8J-K7-OFh" secondAttribute="bottom" constant="12" id="8zc-NN-186"/>
+                            <constraint firstAttribute="trailing" secondItem="UjI-29-B53" secondAttribute="trailing" id="97i-Vc-uSI"/>
+                            <constraint firstItem="aWd-gK-lDR" firstAttribute="centerX" secondItem="hG4-f3-ROa" secondAttribute="centerX" id="BHD-7O-1aY"/>
+                            <constraint firstAttribute="bottom" secondItem="DCd-q4-yXE" secondAttribute="bottom" constant="12" id="KT1-AW-X92"/>
+                            <constraint firstItem="aWd-gK-lDR" firstAttribute="centerY" secondItem="hG4-f3-ROa" secondAttribute="centerY" constant="-80" id="QZg-YF-GY7"/>
+                            <constraint firstItem="UjI-29-B53" firstAttribute="top" secondItem="hG4-f3-ROa" secondAttribute="top" id="QoH-ci-NOw"/>
+                            <constraint firstAttribute="trailing" secondItem="DCd-q4-yXE" secondAttribute="trailing" constant="12" id="WGy-3v-3o5"/>
+                            <constraint firstItem="0Sb-Ky-66q" firstAttribute="centerX" secondItem="hG4-f3-ROa" secondAttribute="centerX" id="Yp6-HU-0hQ"/>
+                            <constraint firstItem="UjI-29-B53" firstAttribute="leading" secondItem="hG4-f3-ROa" secondAttribute="leading" id="l7s-9f-q4Y"/>
+                            <constraint firstItem="BsP-LT-0SZ" firstAttribute="top" secondItem="UjI-29-B53" secondAttribute="bottom" id="yyi-Ue-9uW"/>
+                            <constraint firstAttribute="bottom" secondItem="Klg-IR-iP9" secondAttribute="bottom" constant="12" id="zBi-fh-UMK"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="arSCNView" destination="UjI-29-B53" id="pXE-td-aK8"/>
+                        <outlet property="logo" destination="0Sb-Ky-66q" id="tuj-Ku-a8o"/>
+                        <outlet property="recordButton" destination="DCd-q4-yXE" id="iHH-fY-S4h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="48" height="48"/>
+        <image name="logo" width="85" height="16"/>
+        <image name="set" width="48" height="48"/>
+    </resources>
+</document>

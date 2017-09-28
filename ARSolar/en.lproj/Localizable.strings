@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  ARSolar
+
+  Created by 文刀 on 2017/8/25.
+  Copyright © 2017年 wendao. All rights reserved.
+*/
+"RecordScreen" = "Record Screen";
+"StopRecord" = "Stop Recording";
+"StopRecordTop" = "Recording... Click here to stop";
+"FinishRecord" =  "Save video success, it can be found in your system album. You can share it to social platforms like facebook";
+"IKnow" = "OK";
+"CaAuContent" = "Allow AR+Solar to accesss your camera in Settings->Privacy->Camera";
+"LogoImageName" = "logo_en";
+"DeAuContent" = "Sorry, apple's ARKit does not support your phone, so you can't use relevant functions of this app : )";
+

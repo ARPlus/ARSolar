@@ -1,0 +1,77 @@
+
+/* Class = "UIButton"; normalTitle = "Moon"; ObjectID = "2qf-zi-u66"; */
+"2qf-zi-u66.normalTitle" = "Moon";
+
+/* Class = "UIButton"; normalTitle = "Mercury"; ObjectID = "6tr-bH-vIv"; */
+"6tr-bH-vIv.normalTitle" = "Mercury";
+
+/* Class = "UIButton"; normalTitle = "🖌AR画笔"; ObjectID = "AYv-YO-Mpe"; */
+"AYv-YO-Mpe.normalTitle" = "🖌AR+Brush";
+
+/* Class = "UIButton"; normalTitle = "💡意见反馈"; ObjectID = "EWg-vo-v6V"; */
+"EWg-vo-v6V.normalTitle" = "💡Feedback";
+
+/* Class = "UILabel"; text = "Click Here To Start"; ObjectID = "Fcs-Kv-2Lm"; */
+"Fcs-Kv-2Lm.text" = "Click here to start";
+
+/* Class = "UIButton"; normalTitle = "Uranus"; ObjectID = "GE2-Yg-oK4"; */
+"GE2-Yg-oK4.normalTitle" = "Uranus";
+
+/* Class = "UILabel"; text = "AR太阳系"; ObjectID = "Ho0-P9-hvd"; */
+"Ho0-P9-hvd.text" = "AR+Solar";
+
+/* Class = "UIButton"; normalTitle = "🕹AR+Tetris"; ObjectID = "UFy-CX-oBs"; */
+"Wre-v3-Z7Y.normalTitle" = "🕹AR+Tetris";
+
+/* Class = "UIButton"; normalTitle = "👍赏个好评"; ObjectID = "IL3-Vt-kUV"; */
+"IL3-Vt-kUV.normalTitle" = "👍Scoring";
+
+/* Class = "UIButton"; normalTitle = "太阳系"; ObjectID = "NU7-2H-fqh"; */
+"NU7-2H-fqh.normalTitle" = "Solar system";
+
+/* Class = "UIButton"; normalTitle = "Venus"; ObjectID = "PlO-Ms-gn8"; */
+"PlO-Ms-gn8.normalTitle" = "Venus";
+
+/* Class = "UIButton"; normalTitle = "Earth"; ObjectID = "e2T-Tk-DpX"; */
+"e2T-Tk-DpX.normalTitle" = "Earth";
+
+/* Class = "UIButton"; normalTitle = "📏AR尺子"; ObjectID = "hk0-oM-C5T"; */
+"hk0-oM-C5T.normalTitle" = "📏AR+Ruler";
+
+/* Class = "UIButton"; normalTitle = "🌅AR相册"; ObjectID = "lnZ-Em-Pfj"; */
+"lnZ-Em-Pfj.normalTitle" = "🌅AR+Album";
+
+/* Class = "UIButton"; normalTitle = "Neptune"; ObjectID = "oC2-fn-C7z"; */
+"oC2-fn-C7z.normalTitle" = "Neptune";
+
+/* Class = "UIButton"; normalTitle = "Jupiter"; ObjectID = "wS2-iy-s6g"; */
+"wS2-iy-s6g.normalTitle" = "Jupiter";
+
+/* Class = "UIButton"; normalTitle = "Mars"; ObjectID = "yNk-N5-pH2"; */
+"yNk-N5-pH2.normalTitle" = "Mars";
+
+/* Class = "UIButton"; normalTitle = "Saturn"; ObjectID = "ynM-zN-31N"; */
+"ynM-zN-31N.normalTitle" = "Saturn";
+
+/* Class = "UIButton"; normalTitle = "Saturn"; ObjectID = "ynM-zN-31N"; */
+"tqV-Ed-Smt.normalTitle" = "Pluto";
+
+/* Class = "UIButton"; normalTitle = "📄版权说明"; ObjectID = "N6e-99-tbr"; */
+"N6e-99-tbr.normalTitle" = "📄Credits";
+
+
+/* Class = "UIButton"; normalTitle = "AR+Solar"; ObjectID = "1V0-7E-2mu"; */
+"1V0-7E-2mu.normalTitle" = "AR+Solar uses part of the code of ARSolarPlay under";
+
+/* Class = "UIButton"; normalTitle = "protocol"; ObjectID = "nJC-Zd-lqC"; */
+"nJC-Zd-lqC.normalTitle" = "the GPL protocol and also follows the GPL protocol";
+
+/* Class = "UIButton"; normalTitle = "ARSolarPlay Homepage"; ObjectID = "th5-sS-lM3"; */
+"th5-sS-lM3.normalTitle" = "ARSolarPlay Homepage";
+
+/* Class = "UIButton"; normalTitle = "ARSolarPlay License"; ObjectID = "Gu9-I3-A1T"; */
+"Gu9-I3-A1T.normalTitle" = "ARSolarPlay License";
+
+/* Class = "UIButton"; normalTitle = "ARSolarPlay License"; ObjectID = "Gu9-I3-A1T"; */
+"gNo-6Y-qdH.normalTitle" = "[👻More Amazing AR Apps]";
+

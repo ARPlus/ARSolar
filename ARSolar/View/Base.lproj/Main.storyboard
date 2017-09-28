@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="1Jx-fc-TfS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="G2b-Gr-zHs">
+            <objects>
+                <viewController id="1Jx-fc-TfS" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="II7-3v-VMu"/>
+                        <viewControllerLayoutGuide type="bottom" id="fxw-Ro-xMl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5vp-dJ-zO5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmV-Jd-dYJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="btnClicked:" destination="1Jx-fc-TfS" eventType="touchUpInside" id="cJo-fa-Ht6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idh-tu-TnT" userLabel="Setting">
+                                <rect key="frame" x="338" y="0.0" width="37" height="38"/>
+                                <state key="normal" image="Setting"/>
+                                <connections>
+                                    <action selector="settingClicked:" destination="1Jx-fc-TfS" eventType="touchUpInside" id="gHf-XD-5QA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="AR太阳系" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho0-P9-hvd">
+                                <rect key="frame" x="12" y="12" width="61.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Solar" translatesAutoresizingMaskIntoConstraints="NO" id="NwI-pM-06b">
+                                <rect key="frame" x="129.5" y="187.5" width="116" height="92"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Here To Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcs-Kv-2Lm">
+                                <rect key="frame" x="126.5" y="295.5" width="121.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNo-6Y-qdH">
+                                <rect key="frame" x="110" y="622" width="154" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="[👻更多有趣的 AR App]">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingClicked:" destination="1Jx-fc-TfS" eventType="touchUpInside" id="Emg-e0-vet"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2586875855922699" green="0.25821664929389954" blue="0.29136481881141663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gNo-6Y-qdH" firstAttribute="centerX" secondItem="5vp-dJ-zO5" secondAttribute="centerX" id="4BB-jN-2nn"/>
+                            <constraint firstItem="NwI-pM-06b" firstAttribute="centerY" secondItem="5vp-dJ-zO5" secondAttribute="centerY" constant="-100" id="59M-0z-EE5"/>
+                            <constraint firstItem="kmV-Jd-dYJ" firstAttribute="top" secondItem="5vp-dJ-zO5" secondAttribute="top" id="9Vj-zn-31C"/>
+                            <constraint firstItem="kmV-Jd-dYJ" firstAttribute="leading" secondItem="5vp-dJ-zO5" secondAttribute="leading" id="CP6-HO-L9i"/>
+                            <constraint firstAttribute="bottom" secondItem="gNo-6Y-qdH" secondAttribute="bottom" constant="16" id="DDL-4G-H2l"/>
+                            <constraint firstAttribute="trailing" secondItem="kmV-Jd-dYJ" secondAttribute="trailing" id="M29-cr-Lna"/>
+                            <constraint firstAttribute="trailing" secondItem="Idh-tu-TnT" secondAttribute="trailing" id="M8i-TX-gIS"/>
+                            <constraint firstAttribute="bottom" secondItem="kmV-Jd-dYJ" secondAttribute="bottom" id="SZz-a0-c8l"/>
+                            <constraint firstItem="Ho0-P9-hvd" firstAttribute="top" secondItem="5vp-dJ-zO5" secondAttribute="top" constant="12" id="UTR-fc-OvM"/>
+                            <constraint firstItem="Ho0-P9-hvd" firstAttribute="leading" secondItem="5vp-dJ-zO5" secondAttribute="leading" constant="12" id="ahq-Gb-wqw"/>
+                            <constraint firstItem="NwI-pM-06b" firstAttribute="centerX" secondItem="5vp-dJ-zO5" secondAttribute="centerX" id="d7c-ng-bLa"/>
+                            <constraint firstItem="Fcs-Kv-2Lm" firstAttribute="centerX" secondItem="5vp-dJ-zO5" secondAttribute="centerX" id="dSQ-CU-vXa"/>
+                            <constraint firstItem="Idh-tu-TnT" firstAttribute="top" secondItem="5vp-dJ-zO5" secondAttribute="top" id="ebk-9e-VSu"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ho0-P9-hvd" secondAttribute="trailing" constant="20" symbolic="YES" id="pMj-be-dwf"/>
+                            <constraint firstItem="Fcs-Kv-2Lm" firstAttribute="top" secondItem="NwI-pM-06b" secondAttribute="bottom" constant="16" id="yXH-DV-LIi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7pv-za-Ueh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2df-gG-6Wk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-569.5" y="-676.5"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="eF2-hS-Bxo">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" id="V1u-oc-8Zr" userLabel="Setting View Controller" customClass="SettingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lg1-kD-r3I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnZ-Em-Pfj">
+                                <rect key="frame" x="149" y="128" width="77" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="🌅AR相册">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="albumClicked:" destination="V1u-oc-8Zr" eventType="touchUpInside" id="xJV-jL-4th"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk0-oM-C5T">
+                                <rect key="frame" x="149" y="176" width="77" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="📏AR尺子">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rulerClicked:" destination="V1u-oc-8Zr" eventType="touchUpInside" id="KzC-Vs-ghc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IL3-Vt-kUV">
+                                <rect key="frame" x="143" y="507" width="89" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="👍赏个好评">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="solarClicked:" destination="V1u-oc-8Zr" eventType="touchUpInside" id="ybm-rS-Vgn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWg-vo-v6V">
+                                <rect key="frame" x="143" y="555" width="89" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="💡意见反馈">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="feedbackClicked:" destination="V1u-oc-8Zr" eventType="touchUpInside" id="wV2-uK-cdp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rM-eQ-XNd">
+                                <rect key="frame" x="345" y="12" width="18" height="22"/>
+                                <state key="normal" image="Close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="V1u-oc-8Zr" eventType="touchUpInside" id="byA-x1-JJG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYv-YO-Mpe" userLabel="Brush Btton">
+                                <rect key="frame" x="149" y="80" width="77" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="🖌AR画笔">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="brushClicked:" destination="V1u-oc-8Zr" eventType="touchUpInside" id="NQL-k0-l0V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wre-v3-Z7Y">
+                                <rect key="frame" x="124" y="224" width="126" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="🕹AR俄罗斯方块">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tetrisClicked:" destination="V1u-oc-8Zr" eventType="touchUpInside" id="GWk-Kp-H2D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-99-tbr">
+                                <rect key="frame" x="143" y="603" width="89" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="📄版权说明">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="creditsClicked:" destination="V1u-oc-8Zr" eventType="touchUpInside" id="VW7-52-gaF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35671833159999999" green="0.35627180339999998" blue="0.38941133020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AYv-YO-Mpe" firstAttribute="top" secondItem="lg1-kD-r3I" secondAttribute="top" constant="80" id="090-TB-Kkb"/>
+                            <constraint firstItem="7rM-eQ-XNd" firstAttribute="top" secondItem="lg1-kD-r3I" secondAttribute="top" constant="12" id="44G-Td-zjZ"/>
+                            <constraint firstItem="AYv-YO-Mpe" firstAttribute="centerX" secondItem="lg1-kD-r3I" secondAttribute="centerX" id="4l6-RK-Udz"/>
+                            <constraint firstItem="IL3-Vt-kUV" firstAttribute="centerX" secondItem="lg1-kD-r3I" secondAttribute="centerX" id="BaC-aA-6DO"/>
+                            <constraint firstAttribute="trailing" secondItem="7rM-eQ-XNd" secondAttribute="trailing" constant="12" id="LLD-jP-n8r"/>
+                            <constraint firstItem="N6e-99-tbr" firstAttribute="top" secondItem="EWg-vo-v6V" secondAttribute="bottom" constant="16" id="UIN-Jb-yzk"/>
+                            <constraint firstItem="lnZ-Em-Pfj" firstAttribute="top" secondItem="AYv-YO-Mpe" secondAttribute="bottom" constant="16" id="UlZ-QM-L4h"/>
+                            <constraint firstItem="EWg-vo-v6V" firstAttribute="centerX" secondItem="lg1-kD-r3I" secondAttribute="centerX" id="XNG-NF-vjS"/>
+                            <constraint firstItem="EWg-vo-v6V" firstAttribute="top" secondItem="IL3-Vt-kUV" secondAttribute="bottom" constant="16" id="Y3K-VD-B0V"/>
+                            <constraint firstItem="lnZ-Em-Pfj" firstAttribute="centerX" secondItem="lg1-kD-r3I" secondAttribute="centerX" id="adp-f4-rAZ"/>
+                            <constraint firstItem="Wre-v3-Z7Y" firstAttribute="centerX" secondItem="lg1-kD-r3I" secondAttribute="centerX" id="bCu-6g-QRs"/>
+                            <constraint firstAttribute="bottom" secondItem="N6e-99-tbr" secondAttribute="bottom" constant="32" id="bnk-bl-jYD"/>
+                            <constraint firstItem="Wre-v3-Z7Y" firstAttribute="top" secondItem="hk0-oM-C5T" secondAttribute="bottom" constant="16" id="iMx-pL-zRX"/>
+                            <constraint firstItem="hk0-oM-C5T" firstAttribute="top" secondItem="lnZ-Em-Pfj" secondAttribute="bottom" constant="16" id="kc3-a9-Hih"/>
+                            <constraint firstItem="N6e-99-tbr" firstAttribute="centerX" secondItem="lg1-kD-r3I" secondAttribute="centerX" id="ncq-Rg-LB5"/>
+                            <constraint firstItem="hk0-oM-C5T" firstAttribute="centerX" secondItem="lg1-kD-r3I" secondAttribute="centerX" id="r0A-Kl-c2R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A5L-d3-5Tx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="046-wu-6mi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-69" y="-677"/>
+        </scene>
+        <!--Choose View Controller-->
+        <scene sceneID="GTP-wm-jUw">
+            <objects>
+                <viewController storyboardIdentifier="ChooseViewController" id="gU4-t3-SMl" userLabel="Choose View Controller" customClass="ChooseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="26h-fz-nUa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2T-Tk-DpX">
+                                <rect key="frame" x="168" y="88" width="39" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Earth">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="earthClicked:" destination="gU4-t3-SMl" eventType="touchUpInside" id="xio-UU-5zx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qf-zi-u66">
+                                <rect key="frame" x="167" y="136" width="41" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Moon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="moonClicked:" destination="gU4-t3-SMl" eventType="touchUpInside" id="La8-rJ-aMw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvF-aq-2WF">
+                                <rect key="frame" x="345" y="12" width="18" height="22"/>
+                                <state key="normal" image="Close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="gU4-t3-SMl" eventType="touchUpInside" id="fJf-Bt-HDC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU7-2H-fqh" userLabel="Brush Btton">
+                                <rect key="frame" x="168.5" y="40" width="38" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Solar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="solarClicked:" destination="gU4-t3-SMl" eventType="touchUpInside" id="CMQ-7V-wTX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlO-Ms-gn8">
+                                <rect key="frame" x="165" y="232" width="45" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Venus">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="venusClicked:" destination="gU4-t3-SMl" eventType="touchUpInside" id="fTR-94-9rz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNk-N5-pH2">
+                                <rect key="frame" x="169.5" y="280" width="36" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Mars">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="marsClicked:" destination="gU4-t3-SMl" eventType="touchUpInside" id="cW8-Yf-RWh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tr-bH-vIv" userLabel="Brush Btton">
+                                <rect key="frame" x="157" y="184" width="60" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Mercury">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="mercuryClicked:" destination="gU4-t3-SMl" eventType="touchUpInside" id="IcT-hm-HiP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wS2-iy-s6g">
+                                <rect key="frame" x="161.5" y="328" width="51" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Jupiter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="jupiterClicked:" destination="gU4-t3-SMl" eventType="touchUpInside" id="Ld4-zG-d5r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE2-Yg-oK4">
+                                <rect key="frame" x="161" y="424" width="53" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Uranus">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="uranusClicked:" destination="gU4-t3-SMl" eventType="touchUpInside" id="PpX-Hw-DKN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynM-zN-31N" userLabel="Brush Btton">
+                                <rect key="frame" x="163" y="376" width="48" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Saturn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saturnClicked:" destination="gU4-t3-SMl" eventType="touchUpInside" id="3nV-XF-MXi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC2-fn-C7z">
+                                <rect key="frame" x="155.5" y="472" width="63" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Neptune">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="neptuneClicked:" destination="gU4-t3-SMl" eventType="touchUpInside" id="q5z-fr-Wnx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqV-Ed-Smt">
+                                <rect key="frame" x="168.5" y="520" width="38" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Pluto">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="plutoClicked:" destination="gU4-t3-SMl" eventType="touchUpInside" id="vVU-A7-aih"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35671833159999999" green="0.35627180339999998" blue="0.38941133020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GE2-Yg-oK4" firstAttribute="top" secondItem="ynM-zN-31N" secondAttribute="bottom" constant="16" id="4aJ-qF-Iiz"/>
+                            <constraint firstItem="wS2-iy-s6g" firstAttribute="top" secondItem="yNk-N5-pH2" secondAttribute="bottom" constant="16" id="5aD-pe-BSu"/>
+                            <constraint firstItem="NU7-2H-fqh" firstAttribute="centerX" secondItem="26h-fz-nUa" secondAttribute="centerX" id="C7R-pM-god"/>
+                            <constraint firstItem="ynM-zN-31N" firstAttribute="centerX" secondItem="26h-fz-nUa" secondAttribute="centerX" id="Cbs-z1-Giq"/>
+                            <constraint firstItem="NU7-2H-fqh" firstAttribute="top" secondItem="26h-fz-nUa" secondAttribute="top" constant="40" id="Iwt-rQ-yjL"/>
+                            <constraint firstItem="GE2-Yg-oK4" firstAttribute="centerX" secondItem="26h-fz-nUa" secondAttribute="centerX" id="KyU-tG-Bqn"/>
+                            <constraint firstItem="wS2-iy-s6g" firstAttribute="centerX" secondItem="26h-fz-nUa" secondAttribute="centerX" id="LMi-bw-41m"/>
+                            <constraint firstItem="oC2-fn-C7z" firstAttribute="top" secondItem="GE2-Yg-oK4" secondAttribute="bottom" constant="16" id="MsI-jo-DMt"/>
+                            <constraint firstItem="tqV-Ed-Smt" firstAttribute="centerX" secondItem="26h-fz-nUa" secondAttribute="centerX" id="NVR-wA-bSU"/>
+                            <constraint firstItem="2qf-zi-u66" firstAttribute="centerX" secondItem="26h-fz-nUa" secondAttribute="centerX" id="PzN-R4-jCE"/>
+                            <constraint firstItem="yNk-N5-pH2" firstAttribute="top" secondItem="PlO-Ms-gn8" secondAttribute="bottom" constant="16" id="TDT-WD-pZY"/>
+                            <constraint firstItem="ynM-zN-31N" firstAttribute="top" secondItem="wS2-iy-s6g" secondAttribute="bottom" constant="16" id="Thp-0D-hQC"/>
+                            <constraint firstItem="e2T-Tk-DpX" firstAttribute="top" secondItem="NU7-2H-fqh" secondAttribute="bottom" constant="16" id="Uip-19-o4e"/>
+                            <constraint firstItem="6tr-bH-vIv" firstAttribute="top" secondItem="2qf-zi-u66" secondAttribute="bottom" constant="16" id="WCp-US-sv1"/>
+                            <constraint firstAttribute="trailing" secondItem="UvF-aq-2WF" secondAttribute="trailing" constant="12" id="WqE-ac-7PC"/>
+                            <constraint firstItem="wS2-iy-s6g" firstAttribute="top" secondItem="yNk-N5-pH2" secondAttribute="bottom" constant="16" id="XY0-dc-WFa"/>
+                            <constraint firstItem="e2T-Tk-DpX" firstAttribute="centerX" secondItem="26h-fz-nUa" secondAttribute="centerX" id="ah8-Uv-7df"/>
+                            <constraint firstItem="6tr-bH-vIv" firstAttribute="centerX" secondItem="26h-fz-nUa" secondAttribute="centerX" id="cpp-gB-8D1"/>
+                            <constraint firstItem="oC2-fn-C7z" firstAttribute="top" secondItem="GE2-Yg-oK4" secondAttribute="bottom" constant="16" id="d6u-Py-WHx"/>
+                            <constraint firstItem="PlO-Ms-gn8" firstAttribute="centerX" secondItem="26h-fz-nUa" secondAttribute="centerX" id="dJw-HU-RQy"/>
+                            <constraint firstItem="PlO-Ms-gn8" firstAttribute="top" secondItem="6tr-bH-vIv" secondAttribute="bottom" constant="16" id="e34-Ez-Gjx"/>
+                            <constraint firstItem="UvF-aq-2WF" firstAttribute="top" secondItem="26h-fz-nUa" secondAttribute="top" constant="12" id="mcy-2Y-5s3"/>
+                            <constraint firstItem="oC2-fn-C7z" firstAttribute="centerX" secondItem="26h-fz-nUa" secondAttribute="centerX" id="ohM-Me-W3M"/>
+                            <constraint firstItem="2qf-zi-u66" firstAttribute="top" secondItem="e2T-Tk-DpX" secondAttribute="bottom" constant="16" id="rIo-gX-FLh"/>
+                            <constraint firstItem="yNk-N5-pH2" firstAttribute="centerX" secondItem="26h-fz-nUa" secondAttribute="centerX" id="uw3-6Q-jMv"/>
+                            <constraint firstItem="2qf-zi-u66" firstAttribute="top" secondItem="e2T-Tk-DpX" secondAttribute="bottom" constant="16" id="yMm-s9-kSk"/>
+                            <constraint firstItem="tqV-Ed-Smt" firstAttribute="top" secondItem="oC2-fn-C7z" secondAttribute="bottom" constant="16" id="zK9-6A-BQ1"/>
+                            <constraint firstItem="yNk-N5-pH2" firstAttribute="top" secondItem="PlO-Ms-gn8" secondAttribute="bottom" constant="16" id="zcU-O5-1Qs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="scs-Wi-uxf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P89-TP-Gaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471.5" y="-677.5"/>
+        </scene>
+        <!--Credits View Controller-->
+        <scene sceneID="RYW-xq-L5m">
+            <objects>
+                <viewController storyboardIdentifier="CreditsViewController" id="xMd-pQ-4X1" userLabel="Credits View Controller" customClass="CreditsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZHQ-s6-dOY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJC-Zd-lqC" userLabel="Text2">
+                                <rect key="frame" x="77" y="85" width="221" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="的部分代码，同时也遵循 GPL 协议">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="th5-sS-lM3" userLabel="HButton">
+                                <rect key="frame" x="111.5" y="130" width="153" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="ARSolarPlay Homepage">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeClicked:" destination="xMd-pQ-4X1" eventType="touchUpInside" id="Gwg-Qk-oaA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9k-oP-XPN" userLabel="CButton">
+                                <rect key="frame" x="345" y="12" width="18" height="22"/>
+                                <state key="normal" image="Close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="xMd-pQ-4X1" eventType="touchUpInside" id="uyX-mu-L8I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1V0-7E-2mu" userLabel="Text1">
+                                <rect key="frame" x="38.5" y="40" width="299" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="本软件使用了开源在 GPL 协议下的ARSolarPlay">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gu9-I3-A1T" userLabel="LBtton">
+                                <rect key="frame" x="120" y="175" width="136" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="ARSolarPlay  License">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="licenseClicked:" destination="xMd-pQ-4X1" eventType="touchUpInside" id="RGk-EG-vyI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35671833159999999" green="0.35627180339999998" blue="0.38941133020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gu9-I3-A1T" firstAttribute="top" secondItem="th5-sS-lM3" secondAttribute="bottom" constant="16" id="1qk-rE-dWs"/>
+                            <constraint firstItem="th5-sS-lM3" firstAttribute="top" secondItem="nJC-Zd-lqC" secondAttribute="bottom" constant="16" id="7Kl-uN-i7x"/>
+                            <constraint firstItem="nJC-Zd-lqC" firstAttribute="centerX" secondItem="ZHQ-s6-dOY" secondAttribute="centerX" id="A4O-Bn-PhR"/>
+                            <constraint firstItem="Gu9-I3-A1T" firstAttribute="centerX" secondItem="ZHQ-s6-dOY" secondAttribute="centerX" id="Gef-UT-xqc"/>
+                            <constraint firstItem="nJC-Zd-lqC" firstAttribute="top" secondItem="1V0-7E-2mu" secondAttribute="bottom" constant="16" id="IB9-pj-CTB"/>
+                            <constraint firstItem="1V0-7E-2mu" firstAttribute="centerX" secondItem="ZHQ-s6-dOY" secondAttribute="centerX" id="Uyd-WA-yTA"/>
+                            <constraint firstItem="r9k-oP-XPN" firstAttribute="top" secondItem="ZHQ-s6-dOY" secondAttribute="top" constant="12" id="Yp9-sr-hsj"/>
+                            <constraint firstAttribute="trailing" secondItem="r9k-oP-XPN" secondAttribute="trailing" constant="12" id="cnj-T7-yyh"/>
+                            <constraint firstItem="1V0-7E-2mu" firstAttribute="top" secondItem="ZHQ-s6-dOY" secondAttribute="top" constant="40" id="e1V-cS-lb2"/>
+                            <constraint firstItem="th5-sS-lM3" firstAttribute="centerX" secondItem="ZHQ-s6-dOY" secondAttribute="centerX" id="rnC-KP-f3b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="upl-4E-iUc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="55X-jl-U5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="-678"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Close" width="18" height="18"/>
+        <image name="Setting" width="37" height="38"/>
+        <image name="Solar" width="116" height="92"/>
+    </resources>
+</document>
