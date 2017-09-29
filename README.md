@@ -1,6 +1,6 @@
 # ARSolar
 
-AR+Solar uses part of the code of ARSolarPlay under the GPL protocol and also follows the GPL protocol.
+ARSolar uses part of the code of ARSolarPlay under the GPL protocol and also follows the GPL protocol.
 Thanks to miliPolo.
 
 ARSolarPlay HOMEPAGE
